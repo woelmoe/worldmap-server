@@ -90,7 +90,7 @@ amqp.connect('amqp://test:password@192.168.201.25:5672', (err0, connection) => {
 
       const message = JSON.stringify(postData)
 
-      // sendMessageToConsumer(message)
+      sendMessageToConsumer(message)
       res.send(message)
     })
 
